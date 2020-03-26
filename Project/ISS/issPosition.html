@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>ISS position</title>
+    <meta>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="issStyle.css">
+</head>
+
+<body>
+    <div id="main">
+        <span id="toTheMap"> <h3>See position on map</h3></span>
+        <div id="box">
+            <h1>ISS position</h1>
+            <div>
+                <h3 id="longitude"></h3>
+                <h3 id="latitude"></h3>
+                <h3 id="people"></h3>
+                <div id="humanNames"></div>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+        <span id="space"><h3>Back to Space</h3></span>
+
+        <h1>Position of the ISS station in real time</h1>
+        <p>The ISS is moving at close to 28,000 km/h <br> The position is updated every 5 seconds!</p>
+        <div id="carte">
+            <img src="images/carte1440.jpg" alt="world map" class="worldMap">
+            <div id="logoISS"></div>
+        </div>
+    </div>
+    <script src="js/ajaxcall.js"></script>
+    <script src="js/issPosition.js"></script>
+</body>
+
+</html>
