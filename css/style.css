@@ -6,11 +6,15 @@
 }
 
 
+
 /* --- Start webPage --- */
 
 #welcome-section{
     height: 100vh;
-    background: linear-gradient(45deg, #4873ae, #89bd8e);
+    background:url('../Images/tree.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #welcome{
@@ -39,46 +43,159 @@
 #project{
     height:100vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;   
 }
+
+.link-project{
+    color: #62cc3a;
+}
+
+.project-name{
+    text-align: center;
+    margin-top:20px;
+    color:whitesmoke;
+    font-family: 'Special Elite', cursive;
+}
+
+/* General for all Projects */
+
+.memo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: whitesmoke;
+}
+
+/* Project 1 */
+
 .project-n1{
     background-image: url('../Project/ISS/images/ISSbg.jpg');
     background-size: cover;
     background-position: bottom, left;
     position: relative;
 }
-.memo{
-    top:0%;
+
+.memo1{
+    top:0;
     left:-100%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-    color:whitesmoke;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    color: whitesmoke;
-    
+    background-image: linear-gradient(135deg,rgba(72, 115, 174, 0.9) ,rgba(3, 31, 6, 0.9) );
 }
 
-.name-n1{
-    text-align: center;
-    margin-top:20px;
-    color:whitesmoke;
-    font-family: 'Special Elite', cursive;
+.project-n1:hover>.memo1{   
+        animation: top-left 500ms forwards ease-in;
 }
-.project-n1:hover>.memo{   
-        animation: fade 1s forwards;
-}
-@keyframes fade{
+@keyframes top-left{
     100%{
-        left:0%;
+        top:0;
+        left:0;
     }
+}
+
+/* Project 2 */
+
+.project-n2{
+    background-image: linear-gradient(45deg, rgb(3, 31, 6) ,rgb(72, 115, 174));
+    background-image: url('https://media.apnarm.net.au/media/images/2019/10/12/v3imagesbinb2d8500a1b50fb011923ef446fe13f51-242q9yip5urzv1xx4t2_ct1880x930.jpg');
+    background-size: cover;
+    background-position: bottom, left;
+    position: relative;
+    overflow: hidden;
+}
+
+.memo2{
+    top:0%;
+    right:-100%;
+    background-image: linear-gradient(45deg, rgba(3, 31, 6, 0.9) ,rgba(72, 115, 174, 0.9));
+
+}
+
+.project-n2:hover>.memo2{   
+    animation: top-right 500ms forwards ease-in;
+}
+
+@keyframes top-right{
+0%{
+    right:-100%;
+}
+100%{
+    right:0%;
+}
+}
+
+/* Project 3 */
+
+.project-n3{
+    background-image: url('../Project/ISS/images/ISSbg.jpg');
+    background-size: cover;
+    background-position: bottom, left;
+    position: relative;
+    overflow: hidden;
+}
+.memo3{
+    top:0%;
+    left:-100%;
+    background-image: linear-gradient(45deg,rgba(72, 115, 174, 0.9) ,rgba(3, 31, 6, 0.9) );
+
+}
+
+
+.project-n3:hover>.memo3{   
+    animation: bottom-left 500ms forwards ease-in;
+}
+
+@keyframes bottom-left{
+0%{
+    left:-100%;
+}
+100%{
+    left:0%;
+}
+}
+
+/* Project 4 */
+
+.project-n4{
+    background-image: url('../Project/ISS/images/ISSbg.jpg');
+    background-size: cover;
+    background-position: bottom, left;
+    position: relative;
+    overflow: hidden;
+}
+.memo4{
+    top:0%;
+    right:-100%;
+    background-image: linear-gradient(-45deg,rgba(72, 115, 174, 0.9) ,rgba(3, 31, 6, 0.9) );
+
+}
+
+
+.project-n4:hover>.memo4{   
+    animation: bottom-right 500ms forwards ease-in;
+}
+
+@keyframes bottom-right{
+0%{
+    right:-100%;
+}
+100%{
+    right:0%;
+}
 }
 
 .n2{background: blue;}
 .n3{background: orangered;}
 .n4{background: #bada55;}
+
+#contact{
+    height: 100vh;
+    background: url('../Images/water.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
