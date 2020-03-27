@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* --- Start webPage --- */
+
+#welcome-section{
+    height: 100vh;
+    background: linear-gradient(45deg, #4873ae, #89bd8e);
+}
+
+#welcome{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#welcome>h1{
+    font-family: 'Special Elite', cursive;
+    font-size: 5em;
+}
+
+.logo-name{
+    display: flex;
+    flex-direction: row;
+}
+.logo-welcome{
+    max-height: 15rem;
+    width: auto;
+}
+
+#project{
+    height:100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.project-n1{
+    background-image: url('../Project/ISS/images/ISSbg.jpg');
+    background-size: cover;
+    background-position: bottom, left;
+    position: relative;
+}
+.memo{
+    top:0%;
+    left:-100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    color:whitesmoke;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    
+}
+
+.name-n1{
+    text-align: center;
+    margin-top:20px;
+    color:whitesmoke;
+    font-family: 'Special Elite', cursive;
+}
+.project-n1:hover>.memo{   
+        animation: fade 1s forwards;
+}
+@keyframes fade{
+    100%{
+        left:0%;
+    }
+}
+
+.n2{background: blue;}
+.n3{background: orangered;}
+.n4{background: #bada55;}
