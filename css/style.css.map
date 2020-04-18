@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "ACiBA,sDAAsD;AAYtD,sDAAsD;AA4CtD,sDAAsD;AAGtD,AAAA,EAAE,CAAC;EACC,WAAW,EAAE,cAAc;CAAG;;AC7ElC,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;CAAG;;AAEhB,AAAA,EAAE,CAAC;EACC,WAAW,EAAE,cAAc;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_variable.sass",
+        "../sass/_base.sass",
+        "../sass/_nav.sass",
+        "../sass/_home.sass",
+        "../sass/_about.sass",
+        "../sass/_social.sass",
+        "../sass/_work.sass",
+        "../sass/_contact.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
