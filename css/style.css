@@ -1,15 +1,13 @@
 /*  ****    ****    ****    ****    ****    ****    */
 /*  ****    ****    ****    ****    ****    ****    */
 /*  ****    ****    ****    ****    ****    ****    */
-h1 {
-  font-family: fontF(cursive);
+@media (min-width: 480px) {
+  html h1 {
+    font-family: Comfortaa, cursive;
+  }
 }
 
 * {
   margin: 0;
-}
-
-h1 {
-  font-family: fontF(cursive);
 }
 /*# sourceMappingURL=style.css.map */

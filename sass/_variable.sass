@@ -1,6 +1,6 @@
     
 // IN THIS FILE WILL BE DECLAIRED VARIABLES, FUNCTIONS, MIXINS,...
-
+//@use "sass:map"
 
 //      ==> COLOR <==
 
@@ -19,10 +19,12 @@ $colors: (dark: #2b2b2b, clear: #ecf0f1, primary: #a5f20c)
 
 //      ==> FONT-FAMILY <==
 
-$fontF: (cursive: "'Comfortaa', cursive", sansS: "'Montserrat', sans-serif", serif: "'Libre Baskerville', serif")
+$fontF: (cursive: #{'Comfortaa', cursive}, sansS: #{'Montserrat', sans-serif}, serif: #{'Libre Baskerville', serif})
 
 @function font($font-name)
-    @return map-get($fontF, $font-name)
+     @return map-get($fontF, $font-name)
+
+   
 
 // TO CALL FONT WITH FUNCTION
 // FONT-FAMILY: font(cursive)
@@ -53,12 +55,25 @@ $fontF: (cursive: "'Comfortaa', cursive", sansS: "'Montserrat', sans-serif", ser
 
 $mobileF: (mf4: 480px, mf7: 768px, mf9: 992px, mf12: 1200px)
 
+//  ==> THIS IS WITH FUNCTION CALLED IN A MIXIN
+// @function mobileFun($size)
+//     @return map-get($mobileF, $size)
+
+// @mixin mobile($size)
+//     @media (min-width: mobileFun($size))
+//         @content
+//  ==> END OF FUNCTION CALLED IN MIXIN 
+
+
+//  ==> MIXIN CALLS SASS:MAP FUNCTION IN MIXIN
 @mixin mobile($size)
-    @media (min-width: #{$mobileF, $size})
+    @media (min-width: map-get($mobileF, $size))
         @content
 
+
 // TO USE PUT IN THE ELEMENT WITCH WILL BE STYLED
-// @ include mobile(mf4)
+// @include mobile(mf4)
+
 
 //  ___ DESKTOP FIRST ___
 
@@ -69,11 +84,15 @@ $desktopF: (df4: 480px, df7: 768px, df9: 992px, df12: 1200px)
         @content
 
 // TO USE PUT IN THE ELEMENT WITCH WILL BE STYLED
-// @ include mobile(mf4)
+// @include desktop(df4)
 
 /*  ****    ****    ****    ****    ****    ****    */
 
 
-h1
-    font-family: fontF(cursive)
 
+
+html
+    @include mobile(mf4)
+        h1
+            // font-family: map-get($fontF, cursive)
+            font-family: font(cursive)
