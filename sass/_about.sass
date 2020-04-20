@@ -1,0 +1,22 @@
+.aboutHeader
+    position: absolute
+
+#about
+    display: grid
+    grid-template-rows: 10% 10% 1fr 1fr 10% 10%
+    grid-template-columns: 5% 5% auto 5% 5%
+
+.aboutContent
+    grid-row: 3/5
+    grid-column: 3/4    
+    z-index: 15
+    padding: 20px
+    border-radius: 10px
+    box-shadow: -3px -3px 3px rgba(255,255,255,0.7), 3px 3px 3px rgba(0,0,0,0.4)
+
+
+
+.aboutDot
+    @include dots
+    grid-row: 4/6
+    grid-column: 2/5

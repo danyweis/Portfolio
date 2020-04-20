@@ -40,13 +40,27 @@
         <i class="fab fa-codepen"></i> 
 -->
 <!-- DISPLAYED ABSOLUTE -->
-<div class="logo">logo</div>
-<nav class="db navbar">
+
+<div class="logo">
+    <img class="logoDesktop" src="Images/svg/logoDanyWeis.svg" alt="Logo Dany Weis">
+    <img class="logoMobile" src="Images/svg/logoDW.svg" alt="Logo DW">
+</div>
+<nav class="db navbarMobile">
+    <ul>
+        <li><a href="#work" class="df siteLink">portfolio  <span class="icons"><i class="fas fa-folder-minus"></i><i class="fas fa-folder-minus back"></i></span></a></li>
+        <li><a href="#skills" class="df siteLink">skills  <span class="icons"><i class="fas fa-list-ul"></i><i class="fas fa-list-ul back"></i></span></a></li>
+        <li><a href="#contact" class="df siteLink">contact  <span class="icons"><i class="fas fa-at"></i><i class="fas fa-at back"></i></span></a></li>
+
+    </ul>
+</nav>
+<nav class="db navbarDesktop">
     <ul>
         <li><a href="#" class="cf siteLink">home</a></li>
-        <li><a href="#about" class="cf siteLink">about</a></li>
-        <li><a href="#work" class="cf siteLink">work</a></li>
-        <li><a href="#contact" class="cf siteLink">contact</a></li>
+        <li><a href="#about" class="df siteLink">about</a></li>
+        <li><a href="#work" class="df siteLink">portfolio</a></li>
+        <li><a href="#skills" class="df siteLink">skills</a></li>
+        <li><a href="#contact" class="df siteLink">contact</a></li>
+
     </ul>
 </nav>
 <nav class="social">
@@ -62,35 +76,39 @@
 <header id="home">   
 
                 <div class="cb fName">
-                    <h2 class="cf">&lt;!-- Web</h2>
-                    <h1 class="df" >dany</h1>
+                    <h2 class="cf lNameBack">Weis</h2>
+                    <h1 class="df nameFront" >dany </h1>
                 </div>
            
                 <div class="db lName">
-                    <h2 class="df">dev --&gt;</h2>
-                    <h1 class="pc">weis</h1>
+                    <h2 class="df fNameBack">Dany</h2>
+                    <h1 class="pc nameFront">weis</h1>
                 </div>
 
     </header>
 
-    <section id="about">
+    <section id="about" class="cb">
 
-        <div class="aboutHeader">
-            <h2>about</h2>
+        <div class="aboutHeader cf">
+            <h2 class="rotatedHeader">about</h2>
         </div>
-        <div class="aboutContent">
+        <div class="cb aboutContent">
             <h3>this is me</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, doloribus libero nulla deleniti tempora repudiandae, quas, consectetur unde iusto sequi suscipit eaque ducimus! Magnam, quod?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, doloribus libero nulla deleniti tempora repudiandae, quas, consectetur unde iusto sequi suscipit eaque ducimus! Magnam, quod?
+
             </p>
+
+            <!-- <h2 id="skills" class="skills cf">skills</h2> -->
         </div>
-        <div class="aboutDot">dots</div>
+        <div class="aboutDot"></div>
 
     </section> <!-- END ABOUT -->
 
-    <section id="work">
-        <div class="workHeader">
-            <h2>work</h2>
+    <section id="work"  class="db"> 
+        <div class="workHeader df">
+            <h2 class="rotatedHeader">work</h2>
         </div>
         <div class="workContent">
             <div class="work1"></div> <!-- END WORK1 -->
@@ -103,10 +121,10 @@
 
     </section> <!--END WORK -->
 
-    <section id="contact">
+    <section id="contact" class="cb">
 
-        <div class="contactHeader">
-            <h2>contact</h2>
+        <div class="contactHeader cf">
+            <h2 class="rotatedHeader">contact</h2>
         </div>
         <div class="contactContent">
 
@@ -115,8 +133,8 @@
 
     </section> <!--END CONTACT-->
 
-
     <script src="https://kit.fontawesome.com/35473b1517.js"></script>
+    
 </body>
 
 </html>

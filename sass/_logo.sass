@@ -1,0 +1,25 @@
+.logo
+    position: absolute
+    z-index: 100
+
+.logoMobile, .logoDesktop
+    border-radius: 50%
+    margin: 20px
+    position: fixed
+    border-radius: 50%
+    box-shadow: $shadow
+
+.logoDesktop
+    height: 100px
+    width: 100px
+    display: none
+
+    @include mobile(mf7)
+        display: block
+
+.logoMobile
+    height: 60px
+    width: 60px
+    @include mobile(mf7)
+        display: none
+    

@@ -109,17 +109,31 @@ $desktopF: (df4: 480px, df7: 768px, df9: 992px, df12: 1200px)
 //  ****    ****    ****    ****    ****    ****    
 
 
+//  SINGLE MIXINS
 
-// EXEMPLE
+//  TEXT ROTATION H2
 
-// html
-//     @include mobile(mf4)
-//         h1
-//             // font-family: map-get($fontF, cursive)
-//             font-family: font(cursive)
-//             color: color(primary)
+@mixin rotation
+    position: absolute
+    transform: rotate(90deg)
+    transform-origin: left bottom
+    z-index: 0
+
+@mixin dots
+    background: linear-gradient(-45deg,transparent,transparent 2px,color(clearBG) 2.2px),linear-gradient(45deg,color(primary),color(primary))
+    background-size: 10px 10px
+
+@mixin horizontalLine
+    background: linear-gradient(0deg,transparent,transparent 2px,color(clearBG) 2.2px),linear-gradient(45deg,color(primary),color(primary))
+    background-size: 10px 10px
+
+@mixin verticalLine
+    background: linear-gradient(90deg,transparent,transparent 2px,color(clearBG) 2.2px),linear-gradient(45deg,color(primary),color(primary))
+    background-size: 10px 10px    
 
 
+//  SINGLE VARIABLES
 
-
+//  BOX-SHADOWS
+$shadow: -3px -3px 3px rgba(255,255,255,0.7), 3px 3px 3px rgba(0,0,0,0.4)
 

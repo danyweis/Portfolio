@@ -4,17 +4,24 @@
 
 html
     position: relative
+    scroll-behavior: smooth
 
 h1
     font-family: font(cursive)
-    font-size: 5em
+    font-size: 7em
+
+    @include mobile(mf7)
+        font-size: 10em
 
 
 h2, h3, h4, h5, h6, a
     font-family: font(sansS)
 
 h2
-    font-size: 5em 
+    font-size: 6em 
+
+    @include mobile(mf4)
+        font-size: 8em
 
 h3
     color: color(primary)
@@ -22,6 +29,8 @@ h3
 p
     font-style: font(serif)
     line-height: 150%
+
+// BASE COLORS
 
 .cf // CLEAR FONT
     color: color(clearFont)
@@ -37,3 +46,15 @@ p
 
 .pc // PRIMARY COLOR
     color: color(primary)
+
+
+// BASE ALL OVER THE SITE
+
+#home, #about, #work, #contact
+    min-height: 100vh
+ 
+.rotatedHeader
+    @include rotation
+
+
+    
