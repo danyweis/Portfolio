@@ -50,11 +50,19 @@ p
 
 // BASE ALL OVER THE SITE
 
-#home, #about, #work, #contact
+#about, #work, #skills, #contact
     min-height: 100vh
  
 .rotatedHeader
     @include rotation
+    margin-left: -10px
+    margin-top: -50px 
+    @include mobile(mf4)
+        transform: rotate(0)
+        margin-left: 0px
+        margin-top: 0px 
+    @include mobile(mf9)
+         transform: rotate(90deg)
 
 
     

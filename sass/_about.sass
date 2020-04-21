@@ -3,8 +3,8 @@
 
 #about
     display: grid
-    grid-template-rows: 10% 10% 1fr 1fr 10% 10%
-    grid-template-columns: 5% 5% auto 5% 5%
+    grid-template-rows: 10vh 10vh 1fr 1fr 10vh 10vh
+    grid-template-columns: 10% 5% auto 5% 5%
 
 .aboutContent
     grid-row: 3/5
@@ -12,11 +12,12 @@
     z-index: 15
     padding: 20px
     border-radius: 10px
-    box-shadow: -3px -3px 3px rgba(255,255,255,0.7), 3px 3px 3px rgba(0,0,0,0.4)
-
+    box-shadow: $shadowCBG 
+    &::first-letter
+       font-size: 300% 
 
 
 .aboutDot
-    @include dots
+    @include dots(color(clearBG),10px, 10px)
     grid-row: 4/6
     grid-column: 2/5

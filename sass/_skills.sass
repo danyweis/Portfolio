@@ -1,0 +1,60 @@
+.skillsContent
+    display: grid
+    height: 100vh
+    justify-items: center
+    align-items: center
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+
+.skills
+    height: 
+    // width: 20%
+    position: relative
+
+    img
+        max-height: 4rem
+
+        @include mobile(mf4)
+            max-height: 6rem
+
+    .fab, .frontImg
+        font-size: 4rem
+        color: color(clearBG)
+        filter: $shadowFrontCBG
+
+        @include mobile(mf4)
+            font-size: 6rem
+    
+    .back
+        position: absolute
+        top: 0
+        left: 0
+        filter: $shadowBackCBG
+
+.skill1 // HTML
+    grid-row: 2/3
+    grid-column: 2/4
+
+.skill2 // CSS
+    grid-row: 2/3
+    grid-column: 4/6
+
+.skill3 // JS
+    grid-row: 3/4
+    grid-column: 3/5
+
+.skill4 // SASS
+    grid-row: 3/4
+    grid-column: 2/3
+
+.skill5 // GIT
+    grid-row: 3/4
+    grid-column: 5/6
+
+.skill6 // INKSCAPE
+    grid-row: 4/5
+    grid-column: 4/6
+
+.skill7 // GIMP
+    grid-row: 4/5
+    grid-column: 2/4

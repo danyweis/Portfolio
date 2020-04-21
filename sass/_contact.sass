@@ -1,0 +1,72 @@
+#contact
+    display: grid
+    grid-template-rows: 10vh 10vh 1fr 1fr 10vh 10vh
+    grid-template-columns: 10% 5% auto 5% 5%
+
+.contactContent
+    position: relative
+    grid-row: 3/5
+    grid-column: 3/4
+    z-index: 15
+    padding: 20px
+    border-radius: 10px
+    box-shadow: $shadowDBG 
+
+    h3
+        width: 70%
+        line-height: 200%
+        text-align: right
+    
+    .pointer
+        position: relative
+        animation: yourAnimation 3s infinite 0s ease-out
+       
+
+        .arrow, .arrowClick
+            position: absolute
+            
+
+            .frontArrow, .backArrow
+                position: relative
+                height: 3rem
+
+                .arrows
+                    max-height: 100%
+                    filter: $shadowFrontDBG
+
+
+                .back
+                    position: absolute
+                    filter: $shadowBackDBG
+                    bottom: 0
+                    left: 0
+            
+            .backArrow
+                display: none
+
+.arrow
+    z-index: 1000
+
+.contactMe
+    position: absolute
+    bottom: 0
+    right: 5px
+    margin: auto
+    transform: rotate(90deg)
+    transform-origin:  right top
+    font-size: 1.2rem
+    color: color(primary)
+    // margin-right: 50px
+    // padding-bottom: 20px
+
+    
+
+@keyframes yourAnimation
+    0%
+        transform: translateX(0) translateY(0)
+        
+    50%
+        transform: translateX(60vw) translateY(20vh)
+        
+    100%
+        transform: translateX(60vw) translateY(20vh)
