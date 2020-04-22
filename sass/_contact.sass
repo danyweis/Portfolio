@@ -1,13 +1,8 @@
 #contact
-    // width: 100vw
-    // overflow: hidden
-    // height: 100%
-    // width: 100%
     display: grid
     grid-template-rows: 10vh 10vh 1fr 1fr 10vh 10vh
     grid-template-columns: 10% 5% minmax(250px, auto) 5% 5%
-    // justify-content: center
-    // align-content: center
+
 
 .contactContent
     position: relative
@@ -31,15 +26,34 @@
     @include mobile(mf4)
         font-size: 4rem
 
+.contactSocial
+    width: 75%
+    display: flex
+    justify-content: space-between
+    height: 4rem
+   
+
+.imgBlock
+    position: relative
+    &:hover
+        transform: scale(150%)
+    img
+        height: 100%
+
+    .frontImg
+        filter: $shadowFrontDBG
+    .back
+        position: absolute
+        top: 0
+        left: 0
+        filter: $shadowBackDBG
+
 .pointer
     position: relative
     margin-left: 50px
-    
-       
 
 .arrow, .arrowClick
     position: absolute
-    
 
 .frontArrow, .backArrow
     position: relative
@@ -67,17 +81,13 @@
     z-index: 1000
 
 .contactMe
-    // position: absolute
     bottom: 0
     right: 5px
-    // margin: auto
-    // transform: rotate(90deg)
-    // transform-origin:  right top
     font-size: 1.2rem
     color: color(primary)
-    // margin-right: 50px
-    // padding-bottom: 20px
 
+    @include mobile(mf7)
+        font-size: 2rem
     
 
 @keyframes secondAnimation
