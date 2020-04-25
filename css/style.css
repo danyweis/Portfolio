@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-  color: #a5f20c;
+  color: #0c55f2;
   font-size: 2rem;
 }
 
@@ -65,7 +65,7 @@ p {
 }
 
 .pc {
-  color: #a5f20c;
+  color: #0c55f2;
 }
 
 #about, #work, #skills, #contact {
@@ -113,10 +113,8 @@ p {
 }
 
 .logoMobile {
-  border-radius: 50%;
   margin: 20px;
   position: fixed;
-  border-radius: 50%;
 }
 
 .logoDesktop {
@@ -124,7 +122,7 @@ p {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .logoDesktop {
     display: block;
   }
@@ -135,7 +133,7 @@ p {
   width: 60px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .logoMobile {
     display: none;
   }
@@ -147,7 +145,7 @@ p {
 
 .navbarMobile {
   position: fixed;
-  background: #a5f20c;
+  background: #0c55f2;
   z-index: 100;
   width: 100%;
   height: 10vh;
@@ -202,13 +200,13 @@ p {
   font-size: 2rem;
   margin-top: 0px;
   position: relative;
-  color: #a5f20c;
-  -webkit-filter: drop-shadow(-3px -3px 2px white);
-          filter: drop-shadow(-3px -3px 2px white);
+  color: #0c55f2;
+  -webkit-filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.4));
+          filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.4));
 }
 
 .icons .back {
-  color: #a5f20c;
+  color: #0c55f2;
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.9));
           filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.9));
   position: absolute;
@@ -261,17 +259,56 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   font-size: 25px;
-  color: #a5f20c;
+  color: #e6e6e6;
+}
+
+.navbarDesktopUl a:hover {
+  color: #0c55f2;
 }
 
 .navIcon {
   height: 30px;
+  display: none;
 }
 
 .navIcon img {
   height: 100%;
   margin-right: 5px;
+}
+
+.social {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  top: calc(50% - 72.5px);
+  z-index: 1000;
+}
+
+.social ul {
+  background: #000;
+}
+
+.social ul li {
+  list-style: none;
+}
+
+.social a {
+  display: block;
+  height: 30px;
+  margin: 5px;
+}
+
+.social a img {
+  max-height: 100%;
+  border-radius: 3px;
+}
+
+.social a img:hover {
+  background: #0c55f2;
 }
 
 #home {
@@ -368,7 +405,7 @@ p {
 }
 
 .aboutDot {
-  background: linear-gradient(-45deg, transparent, transparent 2px, #ecf0f1 2.2px), linear-gradient(45deg, #a5f20c, #a5f20c);
+  background: linear-gradient(-45deg, transparent, transparent 2px, #ecf0f1 2.2px), linear-gradient(45deg, #0c55f2, #0c55f2);
   background-size: 10px 10px;
   -ms-grid-row: 4;
   -ms-grid-row-span: 2;
@@ -468,7 +505,7 @@ p {
 }
 
 .fas {
-  color: #a5f20c;
+  color: #0c55f2;
 }
 
 .skillsContent {
@@ -635,7 +672,7 @@ p {
 }
 
 .contactSocial {
-  width: 75%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,11 +684,8 @@ p {
 
 .imgBlock {
   position: relative;
-}
-
-.imgBlock:hover {
-  -webkit-transform: scale(150%);
-          transform: scale(150%);
+  width: 50%;
+  text-align: center;
 }
 
 .imgBlock img {
@@ -666,7 +700,7 @@ p {
 .imgBlock .back {
   position: absolute;
   top: 0;
-  left: 0;
+  left: calc(50% - 32px);
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.9));
           filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.9));
 }
@@ -718,7 +752,7 @@ p {
   bottom: 0;
   right: 5px;
   font-size: 1.2rem;
-  color: #a5f20c;
+  color: #0c55f2;
 }
 
 @media (min-width: 768px) {

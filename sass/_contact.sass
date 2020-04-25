@@ -27,16 +27,18 @@
         font-size: 4rem
 
 .contactSocial
-    width: 75%
+    width: 50%
     display: flex
     justify-content: space-between
     height: 4rem
+    
    
 
 .imgBlock
     position: relative
-    &:hover
-        transform: scale(150%)
+    width: 50%
+    text-align: center
+   
     img
         height: 100%
 
@@ -45,7 +47,7 @@
     .back
         position: absolute
         top: 0
-        left: 0
+        left: calc(50% - 32px)
         filter: $shadowBackDBG
 
 .pointer
