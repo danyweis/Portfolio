@@ -48,13 +48,38 @@
 
 .heroContactLink
     text-decoration: none
+    position: relative
     color: color(clearFont)
+    font-weight: bold
     background: color(primary)
     padding: 10px 20px
     border-radius: 100px
+    overflow: hidden
+    z-index: 1
     box-shadow: $shadowDBG
-    &:hover
-        box-shadow: $shadowInDBG
+    
+
+    &::after
+        content: ''
+        padding: 10px 20px
+        position: absolute
+        background-color: #44444433
+        // background-color: green
+        width: calc(100% - 40px)
+        height: calc(100% - 20px)
+        left: 0
+        top: 0
+        border-radius: 100px
+        transform: scaleX(0)
+        transform-origin: right
+        transition: transform 250ms ease-in
+
+        z-index: -1
+    &:hover::after
+        transform: scaleX(1)
+        transform-origin: left
+        
+
     
 .heroBreak
     @include mobile(mf7)
