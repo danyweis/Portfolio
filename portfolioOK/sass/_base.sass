@@ -6,9 +6,14 @@
 body
     background: color(darkBG)
 
+
 h1
     font-family: font(fontHero)
     font-size: 3rem
+    color: color(clearBG)
+
+h2, h3
+    color: color(darkFont)
     
 h2, h3
     font-family: font(fontH)
@@ -16,16 +21,18 @@ h2, h3
 p, a
     font-family: font(fontP)
     line-height: 150%
+    color: color(clearFont)
 
 .mainWrapper
     display: grid
+    grid-gap: 50px
     grid-template-columns: auto 90% auto
 
     @include mobile(mf7)
-        grid-template-columns: auto 70% auto
+        grid-template-columns: auto 80% auto
         
     @include mobile(mf9)
-        grid-template-columns: auto 65% auto
+        grid-template-columns: auto 70% auto
 
 #about, #portfolio, #contact
     grid-column: 2/3

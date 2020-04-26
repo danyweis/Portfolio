@@ -7,7 +7,7 @@
 
 //      ==> COLOR <==    HAS TO BE CHANGED
 
-$colors: (darkFont: #444444, darkBG: #dfdfdf, clearBG: #fdfdfd, clearFont: #a7a7a7, primary: #0c55f2)
+$colors: (darkFont: #444444, darkBG: #dfdfdf, clearBG: #f7f7f7, clearFont: #a7a7a7, primary: #0c55f2)
 
 // TO CALL COLOR WITHOUT FUNCTION
 // COLOR: map-get($colors, primary)
@@ -133,7 +133,7 @@ $desktopF: (df4: 480px, df7: 768px, df9: 992px, df12: 1200px)
 
 
 @mixin heroBackground($url)
-    background-image: url($url)
+    background-image: $darkenBG, url($url)
     background-size: cover
     background-position: left center
 
@@ -152,3 +152,5 @@ $shadowBackCBG: drop-shadow(3px 3px 2px rgba(0,0,0,0.4))
 
 $shadowFrontDBG: drop-shadow(-3px -3px 2px rgba(255,255,255,0.4))
 $shadowBackDBG: drop-shadow(3px 3px 2px rgba(0,0,0,0.9))
+
+$darkenBG: linear-gradient(to right,rgba(0,0,0,0.4) ,rgba(0,0,0,0.4))

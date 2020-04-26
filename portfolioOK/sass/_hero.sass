@@ -1,8 +1,8 @@
 .hero
     position: relative
     height: 100vh
-    @include heroBackground('../img/mountains.jpg')
     overflow: hidden
+    background: #22445d
 
 .hero::before
     content: ''
@@ -40,11 +40,14 @@
 
 
 .heroHeader
-    border-bottom: 1px color(darkFont) solid
+    border-bottom: 1px color(clearBG) solid
 
 .heroParagraph
     text-align: center
     margin: 25px auto
+
+    @include mobile(mf4)
+        font-size: 20px
 
 .heroContactLink
     text-decoration: none
@@ -64,7 +67,6 @@
         padding: 10px 20px
         position: absolute
         background-color: #44444433
-        // background-color: green
         width: calc(100% - 40px)
         height: calc(100% - 20px)
         left: 0
