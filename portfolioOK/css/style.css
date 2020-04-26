@@ -1,1 +1,116 @@
-/* No CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #dfdfdf;
+}
+
+h1 {
+  font-family: Comfortaa, cursive;
+  font-size: 3rem;
+}
+
+h2, h3 {
+  font-family: Lato, sans-serif;
+}
+
+p, a {
+  font-family: Nunito Sans, serif;
+  line-height: 150%;
+}
+
+.navbar {
+  position: absolute;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/mountains.jpg");
+  background-size: cover;
+  background-position: left center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/mountains.jpg");
+  background-size: cover;
+  background-position: left center;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.heroInside {
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heroLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  margin: 20px;
+}
+
+.heroBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #dfdfdf;
+  -webkit-clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+.heroHeader {
+  border-bottom: 1px #444444 solid;
+}
+
+.heroParagraph {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.heroContactLink {
+  text-decoration: none;
+  color: #a7a7a7;
+  background: #0c55f2;
+  padding: 10px 20px;
+  border-radius: 100px;
+  -webkit-box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.9);
+          box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.4), 3px 3px 3px rgba(0, 0, 0, 0.9);
+}
+
+.heroContactLink:hover {
+  -webkit-box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.4) inset, 3px 3px 3px rgba(0, 0, 0, 0.9) inset;
+          box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.4) inset, 3px 3px 3px rgba(0, 0, 0, 0.9) inset;
+}
+
+@media (min-width: 768px) {
+  .heroBreak {
+    display: none;
+  }
+}

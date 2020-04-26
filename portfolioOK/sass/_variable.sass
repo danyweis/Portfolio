@@ -7,7 +7,7 @@
 
 //      ==> COLOR <==    HAS TO BE CHANGED
 
-$colors: (darkFont: #2b2b2b, darkBG: #1a1a1a, clearBG: #ecf0f1, clearFont: #e6e6e6, primary: #0c55f2)
+$colors: (darkFont: #444444, darkBG: #dfdfdf, clearBG: #fdfdfd, clearFont: #a7a7a7, primary: #0c55f2)
 
 // TO CALL COLOR WITHOUT FUNCTION
 // COLOR: map-get($colors, primary)
@@ -22,7 +22,8 @@ $colors: (darkFont: #2b2b2b, darkBG: #1a1a1a, clearBG: #ecf0f1, clearFont: #e6e6
 
 //      ==> FONT-FAMILY <==   !!!! HAS TO BE CHANGED
 
-$fontF: (cursive: #{'Comfortaa', cursive}, sansS: #{'Montserrat', sans-serif}, serif: #{'Libre Baskerville', serif})
+
+$fontF: (fontHero: #{'Comfortaa', cursive}, fontH: #{'Lato', sans-serif}, fontP: #{'Nunito Sans', serif})
 
 @function font($font-name)
      @return map-get($fontF, $font-name)
@@ -130,6 +131,10 @@ $desktopF: (df4: 480px, df7: 768px, df9: 992px, df12: 1200px)
     background: linear-gradient(90deg,transparent,transparent 2px,$color 2.2px),linear-gradient(45deg,color(primary),color(primary))
     background-size: 10px 10px    
 
+@mixin heroBackground($url)
+    background-image: url($url)
+    background-size: cover
+    background-position: left center
 
 //  SINGLE VARIABLES
 
@@ -137,6 +142,7 @@ $desktopF: (df4: 480px, df7: 768px, df9: 992px, df12: 1200px)
 $shadowCBG: -3px -3px 3px rgba(255,255,255,0.9), 3px 3px 3px rgba(0,0,0,0.4)
 $shadowDBG: -3px -3px 3px rgba(255,255,255,0.4),3px 3px 3px rgba(0,0,0,0.9)
 
+$shadowInCBG: -3px -3px 3px rgba(255,255,255,0.9) inset, 3px 3px 3px rgba(0,0,0,0.4) inset
 $shadowInDBG: -3px -3px 3px rgba(255,255,255,0.4) inset,3px 3px 3px rgba(0,0,0,0.9) inset
 
 
