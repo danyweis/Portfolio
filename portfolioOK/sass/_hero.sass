@@ -4,6 +4,7 @@
     overflow: hidden
     background: #22445d
 
+
 .hero::before
     content: ''
     position: absolute
@@ -14,6 +15,7 @@
     @include heroBackground('../img/mountains.jpg')
     filter: blur(5px)
 
+
 .heroInside
     height: 100%
     position: relative
@@ -22,12 +24,19 @@
     justify-content: center
     align-items: center
 
+
 .heroLogo
     position: absolute
     top: 0
     left: 0
     height: 50px
     margin: 20px
+
+    @include mobile(mf7)
+        position: fixed
+        margin: 10px
+        z-index: 1001
+
 
 .heroBg
     position: absolute
@@ -42,26 +51,27 @@
 .heroHeader
     border-bottom: 1px color(clearBG) solid
 
+
 .heroParagraph
     text-align: center
     margin: 25px auto
+    color: color(clearBG)
 
     @include mobile(mf4)
-        font-size: 20px
+        font-size: 25px
+
 
 .heroContactLink
     text-decoration: none
     position: relative
-    color: color(clearFont)
+    color: color(clearBG)
     font-weight: bold
     background: color(primary)
     padding: 10px 20px
     border-radius: 100px
     overflow: hidden
     z-index: 1
-    box-shadow: $shadowDBG
     
-
     &::after
         content: ''
         padding: 10px 20px
@@ -75,14 +85,14 @@
         transform: scaleX(0)
         transform-origin: right
         transition: transform 250ms ease-in
-
         z-index: -1
+
     &:hover::after
         transform: scaleX(1)
         transform-origin: left
         
-
     
 .heroBreak
+
     @include mobile(mf7)
         display: none

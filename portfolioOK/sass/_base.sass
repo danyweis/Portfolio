@@ -3,8 +3,13 @@
     padding: 0
     box-sizing: border-box
 
+
 body
     background: color(darkBG)
+
+
+html
+    scroll-behavior: smooth
 
 
 h1
@@ -12,27 +17,43 @@ h1
     font-size: 3rem
     color: color(clearBG)
 
+    @include mobile(mf7)
+        font-size: 5rem
+
+
 h2, h3
     color: color(darkFont)
-    
-h2, h3
     font-family: font(fontH)
+
+    @include mobile(mf7)
+        font-size: 3rem
+
 
 p, a
     font-family: font(fontP)
     line-height: 150%
     color: color(clearFont)
 
+
+p,a
+    text-decoration: none
+
+    @include mobile(mf4)
+        font-size: 20px
+
+
 .mainWrapper
     display: grid
-    grid-gap: 50px
-    grid-template-columns: auto 90% auto
+    width: 100%
+    row-gap: 50px
+    grid-template-columns: 5% 90% 5%
 
     @include mobile(mf7)
-        grid-template-columns: auto 80% auto
+        grid-template-columns: 10% 80% 10%
         
     @include mobile(mf9)
-        grid-template-columns: auto 70% auto
+        grid-template-columns: 15% 70% 15%
+
 
 #about, #portfolio, #contact
     grid-column: 2/3

@@ -2,19 +2,26 @@
     background: color(clearBG)
     text-align: center
     padding: 3em
+    border-radius: 5px
+
     @include mobile(mf4)
         padding: 4em
+
     @include mobile(mf7)
         padding: 5em
+
 
 .aboutTitle
     margin-bottom: 30px
 
+
 .aboutParagraph
     margin-bottom: 35px
 
+
 .aboutSkills
     margin-bottom: 30px
+
 
 .aboutSkillsContainer
     display: grid
@@ -22,20 +29,28 @@
     column-gap: 10px
     justify-items: center
 
+    @include mobile(mf7)
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr))
+        column-gap: 20px
+
+
 .aboutSkillsImgBox
     height: 50px
-    width: 50px
-    // background: pink
     margin: 5px
     position: relative
+
+    @include mobile(mf7)
+        height: 70px
+
 
 .aboutSkillsImgFront, .aboutSkillsImgBack
     height: 100%
 
+
 .aboutSkillsImgFront
     filter: $shadowFrontCBG
-    
 
+    
 .aboutSkillsImgBack
     position: absolute
     height: 100%

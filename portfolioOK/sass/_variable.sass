@@ -7,7 +7,7 @@
 
 //      ==> COLOR <==    HAS TO BE CHANGED
 
-$colors: (darkFont: #444444, darkBG: #dfdfdf, clearBG: #f7f7f7, clearFont: #a7a7a7, primary: #0c55f2)
+$colors: (darkFont: #444444, clearBG: #dfdfdf, darkBG: #f7f7f7, clearFont: #747474, primary: #0c55f2, primaryOpacity: #0c55f280)
 
 // TO CALL COLOR WITHOUT FUNCTION
 // COLOR: map-get($colors, primary)
@@ -111,14 +111,7 @@ $desktopF: (df4: 480px, df7: 768px, df9: 992px, df12: 1200px)
 
 //  SINGLE MIXINS
 
-//  TEXT ROTATION H2
-
-@mixin rotation
-    position: absolute
-    transform: rotate(90deg)
-    transform-origin: left bottom
-    z-index: 0
-
+// MAKE BACKGROUND DECORATION
 @mixin dots($color, $spacingA, $spacingB)
     background: linear-gradient(-45deg,transparent,transparent 2px,$color 2.2px),linear-gradient(45deg,color(primary),color(primary))
     background-size: $spacingA $spacingB
@@ -131,11 +124,29 @@ $desktopF: (df4: 480px, df7: 768px, df9: 992px, df12: 1200px)
     background: linear-gradient(90deg,transparent,transparent 2px,$color 2.2px),linear-gradient(45deg,color(primary),color(primary))
     background-size: 10px 10px   
 
-
+// MAKE BACKGROUND IMAGE BLUR
 @mixin heroBackground($url)
     background-image: $darkenBG, url($url)
     background-size: cover
     background-position: left center
+
+// DO UNDERLINE ANIMATION FOR LINKS
+@mixin underline($color)
+    &::after
+        content: ''
+        position: absolute
+        height: 2px
+        width: 100%
+        background: color($color)
+        bottom: 0
+        left: 0
+        transform: scale(0)
+        transform-origin: right
+        transition: transform 250ms ease-in
+    
+    &:hover::after
+        transform-origin: left
+        transform: scale(1)
 
 //  SINGLE VARIABLES
 

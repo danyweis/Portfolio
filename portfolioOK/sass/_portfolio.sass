@@ -2,30 +2,34 @@
     text-align: center
     margin: 25px
 
+
 .portfolioGridContainer
     display: grid
-    
     grid-gap: 30px
+
     @include mobile(mf9)
         grid-template-columns: 1fr 1fr
+
 
 .work
     width: 100%
     height: 380px
     border-radius: 5px
-
     background: color(clearBG)
     
+
 
 .workImgContainerBox
     position: relative
     display: flex
     justify-content: center
     align-items: center
-    border-radius: 5px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
     height: 180px
     width: 100%
     overflow: hidden
+
 
 .workImgContainer
     position: absolute
@@ -36,34 +40,26 @@
     width: 100%
     transform: scale(1)
     transition: transform 0.2s ease
+    background-size: cover
 
     &:hover
         transform: scale(1.1)
-    
+
+
 .workImgContainer1
     background-image: $darkenBG, url('/../portfolio1/Images/CastleLodge.png')
-    background-size: cover
+
 
 .workImgContainer2
     background-image: $darkenBG, url('/../portfolio1/Images/Thairish.png')
-    background-size: cover
+
 
 .workImgContainer3
     background-image: $darkenBG, url('/../portfolio1/Images/ISS.png')
-    background-size: cover
+
 
 .workImgContainer4
     background-image: $darkenBG, url('/../portfolio1/Images/htmlReminder.png')
-    background-size: cover
-
-.imgDimmer
-    width: 100%
-    height: 100%
-    // background: rgba(0,0,0,0.4)
-    display: flex
-    align-items: center
-    justify-content: center
-    background-image: linear-gradient(to right,rgba(0,0,0,0.4) ,rgba(0,0,0,0.8)) 
 
 
 .workHeader
@@ -72,6 +68,7 @@
     font-size: 30px
     font-weight: 900
     z-index: 2
+    pointer-events: none
 
 .workInfoContainer
     height: 55%
@@ -81,30 +78,24 @@
     align-items: center
     justify-content: space-around
     
+
 .workLinkContainer
     display: flex
     width: 100%
     margin-bottom: 20px
     justify-content: space-around
-    
+
+
 .workLink
     text-decoration: none
     position: relative
-    &::after
-        content: ''
-        position: absolute
-        height: 2px
-        width: 100%
-        background: color(primary)
-        bottom: 0
-        left: 0
-        transform: scale(0.1)
-        transform-origin: right
-        transition: transform 250ms ease-in
+    color: color(primaryOpacity)
     
-    &:hover::after
-        transform-origin: left
-        transform: scale(1)
+    &:hover
+        color: color(primary)
+        
+    @include underline(primary)
 
+    
 
     

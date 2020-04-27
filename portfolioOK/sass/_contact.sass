@@ -1,8 +1,29 @@
 #contact
     background: color(clearBG)
-    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
     padding: 3em
+    border-radius: 5px
+    margin-bottom: 55px
+
     @include mobile(mf4)
         padding: 4em
+    
     @include mobile(mf7)
         padding: 5em
+
+
+.contactHeader
+    margin-bottom: 20px
+
+.contactEmail
+    margin-top: 20px
+    position: relative
+    color: color(primaryOpacity)
+    
+    &:hover
+        color: color(primary)
+
+    @include underline(primary)
