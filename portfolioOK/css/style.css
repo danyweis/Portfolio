@@ -275,7 +275,7 @@ p, a {
   }
 }
 
-.heroContactLink {
+.heroPortfolioLink {
   text-decoration: none;
   position: relative;
   color: #e4e4e4;
@@ -287,7 +287,7 @@ p, a {
   z-index: 1;
 }
 
-.heroContactLink::after {
+.heroPortfolioLink::after {
   content: '';
   padding: 10px 20px;
   position: absolute;
@@ -308,7 +308,7 @@ p, a {
   z-index: -1;
 }
 
-.heroContactLink:hover::after {
+.heroPortfolioLink:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: left;
