@@ -1,9 +1,31 @@
 .container
-    background-image: linear-gradient(45deg, color(primary), color(clearFont))
+    background-image: linear-gradient(45deg, color(primaryOpacity), color(clearFont))
     display: flex
     justify-content: space-around
     flex-wrap: wrap
     align-items: center
     height: 100vh
-    h2
-        color: white
+    padding: 25px
+
+    .thankYou
+        display: flex
+        flex-direction: column
+        align-items: center
+        h2
+            color: white
+            text-align: center
+
+.backThankYou
+    position: relative
+    margin: 15px auto
+    color: white
+
+    &:hover
+        color: color(primary)
+    
+    @include underline(primary)
+
+.plane
+    width: 100%
+    @include mobile(mf4)
+        width: 400px
