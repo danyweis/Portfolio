@@ -599,8 +599,14 @@ p, a {
   margin-top: 20px;
   position: relative;
   color: #0c55f280;
-  font-size: 2rem;
   font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 480px) {
+  .contactEmail {
+    font-size: 2rem;
+  }
 }
 
 .contactEmail:hover {
@@ -630,4 +636,108 @@ p, a {
           transform-origin: left;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.contactMailBox {
+  display: none;
+}
+
+.formContainer {
+  max-width: 500px;
+}
+
+.formRow {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.formText {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.nameBlock, .mailBlock, .formText {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nameBlock, .mailBlock {
+  width: 200px;
+}
+
+.btnBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.btnBox .contactLink {
+  position: relative;
+  border-radius: 20px;
+  color: #e4e4e4;
+  font-weight: bold;
+  background: #0c55f2;
+  padding: 10px 20px;
+  border-radius: 100px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btnBox .contactLink::after {
+  content: '';
+  padding: 10px 20px;
+  position: absolute;
+  background-color: #44444433;
+  width: calc(100% - 40px);
+  height: calc(100% - 20px);
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  z-index: -1;
+}
+
+.btnBox .contactLink:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.container {
+  background-image: linear-gradient(45deg, #0c55f2, #747474);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container h2 {
+  color: white;
 }

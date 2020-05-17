@@ -5,8 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- FAVICON -->
-
         <link
+            rel="shortcut icon"
+            href="favicon1/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="favicon1/favicon.ico" type="image/x-icon" />
+        <!-- <link
             rel="apple-touch-icon"
             sizes="57x57"
             href="favicon/apple-icon-57x57.png"
@@ -81,7 +86,7 @@
             name="msapplication-TileImage"
             content="favion/ms-icon-144x144.png"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" /> -->
 
         <!--STYLE-->
 
@@ -407,12 +412,67 @@
 
                 <p class="contactParagraph">To create something awesome</p>
 
-                <a href="mailto:danyweismail@gmail.com" class="contactEmail"
-                    >danyweismail@gmail.com</a
-                >
+                <div class="formContainer">
+                    <form
+                        target="_blank"
+                        action="https://formsubmit.co/02316392b9fac42d568dfbc50ca77eee"
+                        method="POST"
+                    >
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_next" value="thank.html" />
+                        <div class="formRow">
+                            <div class="">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control nameBlock"
+                                    placeholder="Full Name"
+                                    required
+                                />
+                            </div>
+                            <div class="">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control mailBlock"
+                                    placeholder="Email Address"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea
+                                placeholder="Your Message"
+                                class="form-control formText"
+                                name="message"
+                                rows="10"
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="btnBox">
+                            <button type="submit" class="contactLink">
+                                Submit Form
+                            </button>
+                        </div>
+                        <br />
+
+                        <!--create a thank you page-->
+                    </form>
+                </div>
+                <div class="contactMailBox">
+                    <p>
+                        <br />
+                        Sorry you are using the Brave browser and my form is not
+                        yet supported by Brave.
+                    </p>
+                    <a href="mailto:danyweismail@gmail.com" class="contactEmail"
+                        >danyweismail@gmail.com</a
+                    >
+                </div>
             </section>
             <!-- /#contact -->
         </main>
         <!-- /.mainWrapper -->
+        <script src="js/app.js"></script>
     </body>
 </html>
