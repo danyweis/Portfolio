@@ -640,6 +640,7 @@ p, a {
 
 .contactMailBox {
   display: none;
+  text-align: center;
 }
 
 .formContainer {
