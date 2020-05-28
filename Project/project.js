@@ -1,6 +1,5 @@
 var projectInfo = {
-    firstDiv:
-        '<div class="card col-12 col-sm-6 col-md-4 bg-dark text-white" ></div>',
+    firstDiv: '<div class="card col-12 col-sm-6 col-md-4 bg-dark text-white" ></div>',
     imgTag: '<img class="card-img-top">',
     cardBodyTag: '<div class="card-body text-center"></div>',
     cardTitle: '<h5 class="card-title"></h5>',
@@ -14,6 +13,8 @@ var projectInfo = {
         3: "smallProjects/screenshot/004FlipCoin.png",
         4: "smallProjects/screenshot/005age.png",
         5: "smallProjects/screenshot/006heroSlider.png",
+        6: "smallProjects/screenshot/007playingfield.png",
+        7: "smallProjects/screenshot/008stopWatch.png",
     },
     projectName: {
         0: "Momentum Clone",
@@ -22,14 +23,18 @@ var projectInfo = {
         3: "Flip a Coin",
         4: "What age?",
         5: "Pure CSS Hero slider",
+        6: "Guess the color",
+        7: "Simple Stopwatch",
     },
     projectDescription: {
-        0: "In this project I created a momentum clone in witch I learned using local storage",
-        1: "This is a small project where the color of the background changes randomly on every click",
-        2: 'This is the beginning of a bigger Project for later "Color Converter"',
-        3: "This is a simple coin flipper",
-        4: "After you give your date of birth it tell you how long till your B-Day",
-        5: "This is a Hero slider done with only CSS",
+        0: "In this project I created a momentum clone in witch I learned using local storage.",
+        1: "This is a small project where the color of the background changes randomly on every click.",
+        2: 'This is the beginning of a bigger Project for later "Color Converter."',
+        3: "This is a simple coin flipper.",
+        4: "After you give your date of birth it tell you how long till your B-Day.",
+        5: "This is a Hero slider done with only CSS.",
+        6: "This is the Game guess the color. Build with HTML CSS Vanilla JavaScript.",
+        7: "This is a simple stopwatch with start, stop and reset function.",
     },
     projectLink: {
         0: "smallProjects/001momentum.html",
@@ -38,6 +43,8 @@ var projectInfo = {
         3: "smallProjects/004FlipCoin.html",
         4: "smallProjects/005age.html",
         5: "smallProjects/006heroSlider.html",
+        6: "smallProjects/007guessColor.html",
+        7: "smallProjects/008stopWatch.html",
     },
     projectCodeLink: {
         0: "https://github.com/danyweis/oneDay/tree/master/001MomentumClone",
@@ -46,6 +53,8 @@ var projectInfo = {
         3: "https://github.com/danyweis/oneDay/tree/master/004FlipCoin",
         4: "https://github.com/danyweis/oneDay/tree/master/005age",
         5: "https://github.com/danyweis/oneDay/tree/master/006heroSlider",
+        6: "https://github.com/danyweis/oneDay/tree/master/007guessColor",
+        7: "https://github.com/danyweis/oneDay/tree/master/008stopWatch",
     },
 };
 
@@ -84,10 +93,7 @@ let createPage = function (obj) {
         // Creating the h5
         cardBody.insertAdjacentHTML("afterbegin", titleTag);
         let cardTitle = document.querySelector(".card-title");
-        cardTitle.insertAdjacentHTML(
-            "afterbegin",
-            `#${count}: ${projectName[i]}`
-        );
+        cardTitle.insertAdjacentHTML("afterbegin", `#${count}: ${projectName[i]}`);
 
         // Creating the description part
         cardTitle.insertAdjacentHTML("afterend", descriptionTag);

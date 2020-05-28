@@ -485,8 +485,8 @@ p, a {
 }
 
 .workImgContainer4 {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/../Project/smallProjects/screenshot/1momentum.png");
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/../Project/smallProjects/screenshot/1momentum.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/../img/oneDay.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/../img/oneDay.png");
 }
 
 .workHeader {
