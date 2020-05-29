@@ -15,6 +15,7 @@ var projectInfo = {
         5: "smallProjects/screenshot/006heroSlider.png",
         6: "smallProjects/screenshot/007playingfield.png",
         7: "smallProjects/screenshot/008stopWatch.png",
+        8: "smallProjects/screenshot/009pomodoro.png",
     },
     projectName: {
         0: "Momentum Clone",
@@ -25,6 +26,7 @@ var projectInfo = {
         5: "Pure CSS Hero slider",
         6: "Guess the color",
         7: "Simple Stopwatch",
+        8: "25/5 Pomodoro",
     },
     projectDescription: {
         0: "In this project I created a momentum clone in witch I learned using local storage.",
@@ -35,6 +37,7 @@ var projectInfo = {
         5: "This is a Hero slider done with only CSS.",
         6: "This is the Game guess the color. Build with HTML CSS Vanilla JavaScript.",
         7: "This is a simple stopwatch with start, stop and reset function.",
+        8: "Small pomodoro clock.",
     },
     projectLink: {
         0: "smallProjects/001momentum.html",
@@ -45,6 +48,7 @@ var projectInfo = {
         5: "smallProjects/006heroSlider.html",
         6: "smallProjects/007guessColor.html",
         7: "smallProjects/008stopWatch.html",
+        8: "smallProjects/009pomodoro.html",
     },
     projectCodeLink: {
         0: "https://github.com/danyweis/oneDay/tree/master/001MomentumClone",
@@ -55,6 +59,7 @@ var projectInfo = {
         5: "https://github.com/danyweis/oneDay/tree/master/006heroSlider",
         6: "https://github.com/danyweis/oneDay/tree/master/007guessColor",
         7: "https://github.com/danyweis/oneDay/tree/master/008stopWatch",
+        8: "https://github.com/danyweis/oneDay/tree/master/009pomodoro",
     },
 };
 
