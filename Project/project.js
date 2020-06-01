@@ -17,6 +17,8 @@ var projectInfo = {
         7: "smallProjects/screenshot/008stopWatch.png",
         8: "smallProjects/screenshot/009pomodoro.png",
         9: "smallProjects/screenshot/010navbar.png",
+        10: "smallProjects/screenshot/011CovidAPI.png",
+        11: "smallProjects/screenshot/012song.png",
     },
     projectName: {
         0: "Momentum Clone",
@@ -29,6 +31,8 @@ var projectInfo = {
         7: "Simple Stopwatch",
         8: "25/5 Pomodoro",
         9: "Navbar",
+        10: "Covid-19 Data",
+        11: "Lyrics",
     },
     projectDescription: {
         0: "In this project I created a momentum clone in witch I learned using local storage.",
@@ -41,6 +45,8 @@ var projectInfo = {
         7: "This is a simple stopwatch with start, stop and reset function.",
         8: "Small pomodoro clock.",
         9: "Simple navbar build with CSS and JavaScript.",
+        10: "In this project I made a call to the Covid-19 API.",
+        11: "You can get the lyrics of you favorite songs.",
     },
     projectLink: {
         0: "smallProjects/001momentum.html",
@@ -53,6 +59,8 @@ var projectInfo = {
         7: "smallProjects/008stopWatch.html",
         8: "smallProjects/009pomodoro.html",
         9: "smallProjects/010navbar.html",
+        10: "smallProjects/011CovidAPI.html",
+        11: "smallProjects/012song.html",
     },
     projectCodeLink: {
         0: "https://github.com/danyweis/oneDay/tree/master/001MomentumClone",
@@ -65,6 +73,8 @@ var projectInfo = {
         7: "https://github.com/danyweis/oneDay/tree/master/008stopWatch",
         8: "https://github.com/danyweis/oneDay/tree/master/009pomodoro",
         9: "https://github.com/danyweis/oneDay/tree/master/010navbar",
+        10: "https://github.com/danyweis/oneDay/tree/master/011CovidAPI",
+        11: "https://github.com/danyweis/oneDay/tree/master/012song",
     },
 };
 
