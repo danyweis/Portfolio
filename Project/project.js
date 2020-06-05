@@ -19,6 +19,8 @@ var projectInfo = {
         9: "smallProjects/screenshot/010navbar.png",
         10: "smallProjects/screenshot/011CovidAPI.png",
         11: "smallProjects/screenshot/012song.png",
+        12: "smallProjects/screenshot/013crypto.png",
+        13: "smallProjects/screenshot/014pokedex.png",
     },
     projectName: {
         0: "Momentum Clone",
@@ -33,6 +35,8 @@ var projectInfo = {
         9: "Navbar",
         10: "Covid-19 Data",
         11: "Lyrics",
+        12: "Crypto Watch",
+        13: "Pokedex",
     },
     projectDescription: {
         0: "In this project I created a momentum clone in witch I learned using local storage.",
@@ -47,6 +51,8 @@ var projectInfo = {
         9: "Simple navbar build with CSS and JavaScript.",
         10: "In this project I made a call to the Covid-19 API.",
         11: "You can get the lyrics of you favorite songs.",
+        12: "Beginning of a Crypto price tracker.",
+        13: "Pokedex which shows information's about the original 151 Pokemons.",
     },
     projectLink: {
         0: "smallProjects/001momentum.html",
@@ -61,6 +67,8 @@ var projectInfo = {
         9: "smallProjects/010navbar.html",
         10: "smallProjects/011CovidAPI.html",
         11: "smallProjects/012song.html",
+        12: "smallProjects/013crypto.html",
+        13: "smallProjects/014pokedex.html",
     },
     projectCodeLink: {
         0: "https://github.com/danyweis/oneDay/tree/master/001MomentumClone",
@@ -75,6 +83,8 @@ var projectInfo = {
         9: "https://github.com/danyweis/oneDay/tree/master/010navbar",
         10: "https://github.com/danyweis/oneDay/tree/master/011CovidAPI",
         11: "https://github.com/danyweis/oneDay/tree/master/012song",
+        12: "https://github.com/danyweis/oneDay/tree/master/013crypto",
+        13: "https://github.com/danyweis/oneDay/tree/master/014pokedex",
     },
 };
 
