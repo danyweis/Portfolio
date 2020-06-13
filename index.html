@@ -1,242 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- FAVICON -->
-        <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
 
-        <!--STYLE-->
+    <!--STYLE-->
 
-        <link rel="stylesheet" href="css/style.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lato:400,900|Nunito+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa|Lato:400,900|Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
 
-        <title>Dany Weis</title>
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul class="list">
-                <li class="listItem">
-                    <a href="#about" class="listItemLink">About</a>
-                </li>
-                <li class="listItem">
-                    <a href="#portfolio" class="listItemLink">Portfolio</a>
-                </li>
-                <li class="listItem">
-                    <a href="#contact" class="listItemLink">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="socialNav">
-            <ul class="socialList">
-                <li socialListItem>
-                    <a class="socialListItemLink" href="https://github.com/danyweis" target="_blank"
-                        ><span class="socialbox"><img class="socialImg" src="img/githubSquare.svg" alt="Icon github" /></span
-                    ></a>
-                </li>
-                <li socialListItem>
-                    <a class="socialListItemLink" href="https://stackoverflow.com/users/6059862/danycode" target="_blank"
-                        ><span class="socialbox"><img class="socialImg" src="img/stackoverflowSquare.svg" alt="Icon stackoverflow" /></span
-                    ></a>
-                </li>
-                <li socialListItem>
-                    <a class="socialListItemLink" href="https://www.linkedin.com/in/dany-weis-32883b115/" target="_blank"
-                        ><span class="socialbox"><img class="socialImg" src="img/linkedinSquare.svg" alt="Icon linkedin" /></span
-                    ></a>
-                </li>
-                <!-- <li socialListItem><a class="socialListItemLink" href="#" target="_blank"><span class="socialbox"><img class="socialImg" src="img/twitterSquare.svg" alt="Icon twitter"></span></a></li> -->
-            </ul>
-        </nav>
-        <header class="hero">
-            <div class="heroInside">
-                <img class="heroLogo" src="img/dw.svg" alt="Dany Weis Logo" />
-                <div class="heroBg"></div>
-                <h1 class="heroHeader">Dany Weis</h1>
-                <p class="heroParagraph">
-                    Don't try finding yourself, <br class="heroBreak" />
-                    start creating yourself!
-                </p>
-                <!-- BTN GO TO CONTACT OR MAILTOME -->
-                <a href="#portfolio" class="heroPortfolioLink">See my work</a>
+    <title>Dany Weis</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="list">
+        <li class="listItem">
+          <a href="#about" class="listItemLink">About</a>
+        </li>
+        <li class="listItem">
+          <a href="#portfolio" class="listItemLink">Portfolio</a>
+        </li>
+        <li class="listItem">
+          <a href="#contact" class="listItemLink">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="socialNav">
+      <ul class="socialList">
+        <li socialListItem>
+          <a
+            class="socialListItemLink"
+            href="https://github.com/danyweis"
+            target="_blank"
+            ><span class="socialbox"
+              ><img
+                class="socialImg"
+                src="img/githubSquare.svg"
+                alt="Icon github" /></span
+          ></a>
+        </li>
+        <li socialListItem>
+          <a
+            class="socialListItemLink"
+            href="https://stackoverflow.com/users/6059862/danycode"
+            target="_blank"
+            ><span class="socialbox"
+              ><img
+                class="socialImg"
+                src="img/stackoverflowSquare.svg"
+                alt="Icon stackoverflow" /></span
+          ></a>
+        </li>
+        <li socialListItem>
+          <a
+            class="socialListItemLink"
+            href="https://www.linkedin.com/in/dany-weis-32883b115/"
+            target="_blank"
+            ><span class="socialbox"
+              ><img
+                class="socialImg"
+                src="img/linkedinSquare.svg"
+                alt="Icon linkedin" /></span
+          ></a>
+        </li>
+        <!-- <li socialListItem><a class="socialListItemLink" href="#" target="_blank"><span class="socialbox"><img class="socialImg" src="img/twitterSquare.svg" alt="Icon twitter"></span></a></li> -->
+      </ul>
+    </nav>
+    <header class="hero">
+      <div class="heroInside">
+        <img class="heroLogo" src="img/dw.svg" alt="Dany Weis Logo" />
+        <div class="heroBg"></div>
+        <h1 class="heroHeader">Dany Weis</h1>
+        <p class="heroParagraph">
+          Don't try finding yourself, <br class="heroBreak" />
+          start creating yourself!
+        </p>
+        <!-- BTN GO TO CONTACT OR MAILTOME -->
+        <a href="#portfolio" class="heroPortfolioLink">See my work</a>
+      </div>
+      <!-- /.heroInside -->
+    </header>
+    <!-- /.hero -->
+
+    <main class="mainWrapper">
+      <section class="portfolio">
+        <div id="portfolio"></div>
+        <h2 class="portfolioHeader">Portfolio</h2>
+        <!-- /.portfolioHeader -->
+
+        <div class="portfolioGridContainer">
+          <div class="work1 work">
+            <div class="workImgContainerBox">
+              <div class="workImgContainer workImgContainer1"></div>
+              <h3 class="workHeader">Thairish Castle Lodge</h3>
             </div>
-            <!-- /.heroInside -->
-        </header>
-        <!-- /.hero -->
 
-        <main class="mainWrapper">
-            <section class="portfolio">
-                <div id="portfolio"></div>
-                <h2 class="portfolioHeader">Portfolio</h2>
-                <!-- /.portfolioHeader -->
+            <div class="workInfoContainer">
+              <p class="workParagraph">
+                This is a project for a pub & restaurant
+              </p>
 
-                <div class="portfolioGridContainer">
-                    <div class="work1 work">
-                        <div class="workImgContainerBox">
-                            <div class="workImgContainer workImgContainer1"></div>
-                            <h3 class="workHeader">Thairish Castle Lodge</h3>
-                        </div>
+              <div class="workLinkContainer">
+                <a
+                  href="https://github.com/danyweis/ThairishCastleLodge"
+                  target="_blank"
+                  class="workLink workCode"
+                  >See the code</a
+                >
+                <a
+                  href="http://castlelodge.ie/html/castlelodge.html"
+                  target="_blank"
+                  class="workLink workProject"
+                  >See the Project</a
+                >
+              </div>
+            </div>
+            <!-- /.workInfoContainer -->
+          </div>
+          <!-- /.work1 -->
+          <div class="work2 work">
+            <div class="workImgContainerBox">
+              <div class="workImgContainer workImgContainer2"></div>
+              <h3 class="workHeader">Crypto Info</h3>
+            </div>
 
-                        <div class="workInfoContainer">
-                            <p class="workParagraph">
-                                This is a project for a pub & restaurant
-                            </p>
+            <div class="workInfoContainer">
+              <p class="workParagraph">
+                This is a project where I used several crypto APIs
+              </p>
 
-                            <div class="workLinkContainer">
-                                <a href="https://github.com/danyweis/ThairishCastleLodge" target="_blank" class="workLink workCode">See the code</a>
-                                <a href="http://castlelodge.ie/html/castlelodge.html" target="_blank" class="workLink workProject">See the Project</a>
-                            </div>
-                        </div>
-                        <!-- /.workInfoContainer -->
-                    </div>
-                    <!-- /.work1 -->
-                    <div class="work2 work">
-                        <div class="workImgContainerBox">
-                            <div class="workImgContainer workImgContainer2"></div>
-                            <h3 class="workHeader">Thairish</h3>
-                        </div>
+              <div class="workLinkContainer">
+                <a
+                  href="https://github.com/danyweis/cryptoProject"
+                  target="_blank"
+                  class="workLink workCode"
+                  >See the code</a
+                >
+                <a
+                  href="Project/crypto/index.html"
+                  target="_blank"
+                  class="workLink workProject"
+                  >See the Project</a
+                >
+              </div>
+            </div>
+            <!-- /.workInfoContainer -->
+          </div>
+          <!-- /.work2 -->
 
-                        <div class="workInfoContainer">
-                            <p class="workParagraph">
-                                This is a website for a cafe (not online yet waiting for pictures from the owner).
-                            </p>
+          <div class="work3 work">
+            <div class="workImgContainerBox">
+              <div class="workImgContainer workImgContainer3"></div>
+              <h3 class="workHeader">ISS Position</h3>
+            </div>
 
-                            <div class="workLinkContainer">
-                                <a href="https://github.com/danyweis/Thairish" target="_blank" class="workLink workCode">See the code</a>
-                                <a href="Project/Thairish/index.html" target="_blank" class="workLink workProject">See the Project</a>
-                            </div>
-                        </div>
-                        <!-- /.workInfoContainer -->
-                    </div>
-                    <!-- /.work2 -->
+            <div class="workInfoContainer">
+              <p class="workParagraph">
+                This is a project you can see in real time the position of the
+                ISS.
+              </p>
 
-                    <div class="work3 work">
-                        <div class="workImgContainerBox">
-                            <div class="workImgContainer workImgContainer3"></div>
-                            <h3 class="workHeader">ISS Position</h3>
-                        </div>
+              <div class="workLinkContainer">
+                <a
+                  href="https://github.com/danyweis/ISS"
+                  target="_blank"
+                  class="workLink workCode"
+                  >See the code</a
+                >
+                <a
+                  href="Project/ISS/issPosition.html"
+                  target="_blank"
+                  class="workLink workProject"
+                  >See the Project</a
+                >
+              </div>
+            </div>
+            <!-- /.workInfoContainer -->
+          </div>
+          <!-- /.work3 -->
 
-                        <div class="workInfoContainer">
-                            <p class="workParagraph">
-                                This is a project you can see in real time the position of the ISS.
-                            </p>
+          <div class="work4 work">
+            <div class="workImgContainerBox">
+              <div class="workImgContainer workImgContainer4"></div>
+              <h3 class="workHeader">oneDay</h3>
+            </div>
 
-                            <div class="workLinkContainer">
-                                <a href="https://github.com/danyweis/ISS" target="_blank" class="workLink workCode">See the code</a>
-                                <a href="Project/ISS/issPosition.html" target="_blank" class="workLink workProject">See the Project</a>
-                            </div>
-                        </div>
-                        <!-- /.workInfoContainer -->
-                    </div>
-                    <!-- /.work3 -->
+            <div class="workInfoContainer">
+              <p class="workParagraph">
+                This is a small side project, where I will try to create one
+                Project a Day.
+              </p>
 
-                    <div class="work4 work">
-                        <div class="workImgContainerBox">
-                            <div class="workImgContainer workImgContainer4"></div>
-                            <h3 class="workHeader">oneDay</h3>
-                        </div>
+              <div class="workLinkContainer">
+                <a
+                  href="https://github.com/danyweis/oneDay"
+                  target="_blank"
+                  class="workLink workCode"
+                  >See the code</a
+                >
+                <a
+                  href="Project/project.html"
+                  target="_blank"
+                  class="workLink workProject"
+                  >See the Project</a
+                >
+              </div>
+            </div>
+            <!-- /.workInfoContainer -->
+          </div>
+          <!-- /.work4 -->
+        </div>
+        <!-- /.portfolioGridContainer -->
+      </section>
+      <!-- /#portfolio -->
 
-                        <div class="workInfoContainer">
-                            <p class="workParagraph">
-                                This is a small side project, where I will try to create one Project a Day.
-                            </p>
+      <section id="about">
+        <h2 class="aboutTitle">This is me</h2>
 
-                            <div class="workLinkContainer">
-                                <a href="https://github.com/danyweis/oneDay" target="_blank" class="workLink workCode">See the code</a>
-                                <a href="Project/project.html" target="_blank" class="workLink workProject">See the Project</a>
-                            </div>
-                        </div>
-                        <!-- /.workInfoContainer -->
-                    </div>
-                    <!-- /.work4 -->
-                </div>
-                <!-- /.portfolioGridContainer -->
-            </section>
-            <!-- /#portfolio -->
+        <p class="aboutParagraph">
+          Hi my name is Dany, I started coding some times ago , and getting more
+          and more passond about it. I focus on learning new things and giving
+          only the best of myself. I was never really interested in technologie
+          but found a new passion in what I do now. Coding has become a part of
+          my life which makes me even smile when I’m stuck solving a problem and
+          makes me even more smile when I solve it.
+        </p>
 
-            <section id="about">
-                <h2 class="aboutTitle">This is me</h2>
+        <h3 class="aboutSkills">Skills</h3>
 
-                <p class="aboutParagraph">
-                    Hi my name is Dany, I started coding some times ago , and getting more and more passond about it. I focus on learning new things and giving only the best of myself. I was never
-                    really interested in technologie but found a new passion in what I do now. Coding has become a part of my life which makes me even smile when I’m stuck solving a problem and makes
-                    me even more smile when I solve it.
-                </p>
+        <div class="aboutSkillsContainer">
+          <div class="aboutSkillsImgBox">
+            <img
+              src="img/html.svg"
+              alt="logo html5"
+              class="aboutSkillsImgFront"
+            /><img
+              src="img/html.svg"
+              alt="logo HTML5"
+              class="aboutSkillsImgBack"
+            />
+          </div>
 
-                <h3 class="aboutSkills">Skills</h3>
+          <div class="aboutSkillsImgBox">
+            <img
+              src="img/css.svg"
+              alt="logo CSS3"
+              class="aboutSkillsImgFront"
+            /><img
+              src="img/css.svg"
+              alt="logo CSS3"
+              class="aboutSkillsImgBack"
+            />
+          </div>
 
-                <div class="aboutSkillsContainer">
-                    <div class="aboutSkillsImgBox"><img src="img/html.svg" alt="logo html5" class="aboutSkillsImgFront" /><img src="img/html.svg" alt="logo HTML5" class="aboutSkillsImgBack" /></div>
+          <div class="aboutSkillsImgBox">
+            <img
+              src="img/js.svg"
+              alt="logo JS"
+              class="aboutSkillsImgFront"
+            /><img src="img/js.svg" alt="logo JS" class="aboutSkillsImgBack" />
+          </div>
 
-                    <div class="aboutSkillsImgBox"><img src="img/css.svg" alt="logo CSS3" class="aboutSkillsImgFront" /><img src="img/css.svg" alt="logo CSS3" class="aboutSkillsImgBack" /></div>
+          <div class="aboutSkillsImgBox">
+            <img
+              src="img/sass.svg"
+              alt="logo Sass"
+              class="aboutSkillsImgFront"
+            /><img
+              src="img/sass.svg"
+              alt="logo Sass"
+              class="aboutSkillsImgBack"
+            />
+          </div>
 
-                    <div class="aboutSkillsImgBox"><img src="img/js.svg" alt="logo JS" class="aboutSkillsImgFront" /><img src="img/js.svg" alt="logo JS" class="aboutSkillsImgBack" /></div>
+          <div class="aboutSkillsImgBox">
+            <img
+              src="img/git.svg"
+              alt="logo Git"
+              class="aboutSkillsImgFront"
+            /><img
+              src="img/git.svg"
+              alt="logo Git"
+              class="aboutSkillsImgBack"
+            />
+          </div>
 
-                    <div class="aboutSkillsImgBox"><img src="img/sass.svg" alt="logo Sass" class="aboutSkillsImgFront" /><img src="img/sass.svg" alt="logo Sass" class="aboutSkillsImgBack" /></div>
+          <div class="aboutSkillsImgBox">
+            <img
+              src="img/github.svg"
+              alt="logo github"
+              class="aboutSkillsImgFront"
+            /><img
+              src="img/github.svg"
+              alt="logo github"
+              class="aboutSkillsImgBack"
+            />
+          </div>
 
-                    <div class="aboutSkillsImgBox"><img src="img/git.svg" alt="logo Git" class="aboutSkillsImgFront" /><img src="img/git.svg" alt="logo Git" class="aboutSkillsImgBack" /></div>
+          <div class="aboutSkillsImgBox">
+            <img
+              src="img/inkscape.svg"
+              alt="logo inkscape"
+              class="aboutSkillsImgFront"
+            /><img
+              src="img/inkscape.svg"
+              alt="logo inkscape"
+              class="aboutSkillsImgBack"
+            />
+          </div>
 
-                    <div class="aboutSkillsImgBox">
-                        <img src="img/github.svg" alt="logo github" class="aboutSkillsImgFront" /><img src="img/github.svg" alt="logo github" class="aboutSkillsImgBack" />
-                    </div>
+          <div class="aboutSkillsImgBox">
+            <img
+              src="img/bootstrap.svg"
+              alt="logo Bootstrap"
+              class="aboutSkillsImgFront"
+            /><img
+              src="img/bootstrap.svg"
+              alt="logo bootstrap"
+              class="aboutSkillsImgBack"
+            />
+          </div>
+          <!-- <div class="aboutSkillsImgBox"><img src="" alt="" class="aboutSkillsImgFront"><img src="" alt="" class="aboutSkillsImgBack"></div> -->
+        </div>
+        <!-- /.aboutSkillsContainer -->
+      </section>
+      <!-- /#about -->
 
-                    <div class="aboutSkillsImgBox">
-                        <img src="img/inkscape.svg" alt="logo inkscape" class="aboutSkillsImgFront" /><img src="img/inkscape.svg" alt="logo inkscape" class="aboutSkillsImgBack" />
-                    </div>
+      <section id="contact">
+        <h2 class="contactHeader">Lets get in Touch</h2>
 
-                    <div class="aboutSkillsImgBox">
-                        <img src="img/bootstrap.svg" alt="logo Bootstrap" class="aboutSkillsImgFront" /><img src="img/bootstrap.svg" alt="logo bootstrap" class="aboutSkillsImgBack" />
-                    </div>
-                    <!-- <div class="aboutSkillsImgBox"><img src="" alt="" class="aboutSkillsImgFront"><img src="" alt="" class="aboutSkillsImgBack"></div> -->
-                </div>
-                <!-- /.aboutSkillsContainer -->
-            </section>
-            <!-- /#about -->
+        <p class="contactParagraph">To create something awesome</p>
 
-            <section id="contact">
-                <h2 class="contactHeader">Lets get in Touch</h2>
+        <div class="formContainer">
+          <form
+            method="POST"
+            target="_blank"
+            action="https://formsubmit.co/02316392b9fac42d568dfbc50ca77eee"
+          >
+            <div class="formRow">
+              <div class="">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control nameBlock"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control mailBlock"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea
+                placeholder="Your Message"
+                class="form-control formText"
+                name="message"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://danyweis.com/thank.html"
+            />
+            <!-- If get spam comment delete line below -->
+            <input type="hidden" name="_captcha" value="false" />
 
-                <p class="contactParagraph">To create something awesome</p>
+            <div class="btnBox">
+              <button type="submit" class="contactLink">
+                Submit Form
+              </button>
+            </div>
+            <br />
 
-                <div class="formContainer">
-                    <form method="POST" target="_blank" action="https://formsubmit.co/02316392b9fac42d568dfbc50ca77eee">
-                        <div class="formRow">
-                            <div class="">
-                                <input type="text" name="name" class="form-control nameBlock" placeholder="Full Name" required />
-                            </div>
-                            <div class="">
-                                <input type="email" name="email" class="form-control mailBlock" placeholder="Email Address" required />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" class="form-control formText" name="message" rows="10" required></textarea>
-                        </div>
-                        <input type="hidden" name="_next" value="http://danyweis.com/thank.html" />
-                        <!-- If get spam comment delete line below -->
-                        <input type="hidden" name="_captcha" value="false" />
-
-                        <div class="btnBox">
-                            <button type="submit" class="contactLink">
-                                Submit Form
-                            </button>
-                        </div>
-                        <br />
-
-                        <!--create a thank you page-->
-                    </form>
-                </div>
-                <div class="contactMailBox">
-                    <p>
-                        <br />
-                        Sorry you are using the Brave browser and my form is not yet supported by Brave.
-                    </p>
-                    <a href="mailto:danyweismail@gmail.com" class="contactEmail">danyweismail@gmail.com</a>
-                </div>
-            </section>
-            <!-- /#contact -->
-        </main>
-        <!-- /.mainWrapper -->
-        <script src="js/app.js"></script>
-    </body>
+            <!--create a thank you page-->
+          </form>
+        </div>
+        <div class="contactMailBox">
+          <p>
+            <br />
+            Sorry you are using the Brave browser and my form is not yet
+            supported by Brave.
+          </p>
+          <a href="mailto:danyweismail@gmail.com" class="contactEmail"
+            >danyweismail@gmail.com</a
+          >
+        </div>
+      </section>
+      <!-- /#contact -->
+    </main>
+    <!-- /.mainWrapper -->
+    <script src="js/app.js"></script>
+  </body>
 </html>
