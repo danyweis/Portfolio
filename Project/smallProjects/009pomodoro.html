@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="009pomodoro.ico" type="image/x-icon" />
+        <link rel="icon" href="009pomodoro.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <title>Focus</title>
+        <style>
+            * {
+                margin: 0;
+            }
+            .container {
+                height: 200px;
+                width: 400px;
+                background-color: #f7f7f7;
+                /* #7b6430 => Pause */
+                /* #549471 => Focus*/
+
+                position: absolute;
+                /* top: 10px;
+                right: 10px; */
+                top: calc(50vh - 75px);
+                right: calc(50vw - 200px);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .timeAnimation {
+                position: absolute;
+                right: 0px;
+            }
+            .numbers {
+                display: flex;
+            }
+            .up1 {
+                min-width: 140px;
+            }
+            .upt {
+                min-width: 120px;
+                text-align: center;
+                font-size: 30px;
+            }
+            .upe {
+                min-width: 180px;
+            }
+            .cubes {
+                display: flex;
+            }
+            .block {
+                min-width: 60px;
+                height: 30px;
+                box-shadow: #11111150 -1px -1px inset;
+            }
+            .blockT {
+                box-shadow: #00000080 -2px 0px inset, #11111150 0px -1px inset;
+            }
+            .block1 {
+                min-width: 200px;
+                height: 30px;
+                box-shadow: #00000080 -2px 0px inset;
+            }
+            .block-1 {
+                min-width: 200px;
+                height: 40px;
+            }
+            .arrow {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                height: 90px;
+                font-size: 20px;
+                width: 100%;
+                text-align: center;
+            }
+            h1 {
+                text-align: center;
+                line-height: 50%;
+            }
+            .btnBox {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            button {
+                font-size: 30px;
+                margin-bottom: 10px;
+                width: 100px;
+                height: 50px;
+                border: none;
+                border-radius: 3px;
+                background: #f7f7f7;
+                outline: 0;
+                transition: ease-in 150ms;
+                box-shadow: 2px 3px 1px 2px #00000050;
+            }
+            button:hover {
+                transform: scale(1.02);
+                box-shadow: 2px 3px 1px 1px #00000050;
+            }
+            button:active {
+                transform: scale(0.98);
+                box-shadow: 1px 2px 1px 1px #00000070;
+            }
+
+            .displayNone {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="timeAnimation">
+                <div class="numbers">
+                    <div class="up1"></div>
+                    <div class="upt">0</div>
+                    <div class="upe"></div>
+                    <div class="upt">5</div>
+                    <div class="upe"></div>
+                    <div class="upt">10</div>
+                    <div class="upe"></div>
+                    <div class="upt">15</div>
+                    <div class="upe"></div>
+                    <div class="upt">20</div>
+                    <div class="upe"></div>
+                    <div class="upt">25</div>
+                </div>
+                <div class="cubes">
+                    <div class="block1 blockT"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block blockT"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block blockT"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block blockT"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block blockT"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block blockT"></div>
+
+                    <div class="block-1"></div>
+                </div>
+            </div>
+            <div class="arrow"><i class="fas fa-sort-up"></i></div>
+            <h1><span class="pomodoro">Pomodoro</span><span class="work displayNone">Focus</span><span class="doBreak displayNone">Break</span></h1>
+            <div class="btnBox">
+                <button class="start active">Start</button>
+                <button class="stop">Stop</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+        <script src="009pomodoro.js"></script>
+    </body>
+</html>

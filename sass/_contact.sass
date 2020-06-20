@@ -1,0 +1,95 @@
+#contact
+    background: color(clearBG)
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    padding: 3em
+    border-radius: 5px
+    margin-bottom: 55px
+
+    @include mobile(mf4)
+        padding: 4em
+    
+    @include mobile(mf7)
+        padding: 5em
+
+
+.contactHeader
+    margin-bottom: 20px
+
+.contactEmail
+    margin-top: 20px
+    position: relative
+    color: color(primaryOpacity)
+    font-weight: bold
+    font-size: 1.2rem
+    @include mobile(mf4)
+        font-size: 2rem
+    
+    &:hover
+        color: color(primary)
+
+    @include underline(primary)
+
+.contactMailBox
+    display: none
+    text-align: center
+
+
+.formContainer
+    max-width: 500px
+
+.formRow
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.formText
+    margin-top: 15px
+    width: 100%
+    
+
+.nameBlock, .mailBlock, .formText
+    padding: 10px
+    border-radius: 10px
+
+.nameBlock, .mailBlock
+    width: 200px
+
+
+.btnBox
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    .contactLink
+        position: relative
+        border-radius: 20px
+        color: color(clearBG)
+        font-weight: bold
+        background: color(primary)
+        padding: 10px 20px
+        border-radius: 100px
+        overflow: hidden
+        z-index: 1
+
+        &::after
+            content: ''
+            padding: 10px 20px
+            position: absolute
+            background-color: #44444433
+            width: calc(100% - 40px)
+            height: calc(100% - 20px)
+            left: 0
+            top: 0
+            border-radius: 100px
+            transform: scaleX(0)
+            transform-origin: right
+            transition: transform 250ms ease-in
+            z-index: -1
+
+        &:hover::after
+            transform: scaleX(1)
+            transform-origin: left
